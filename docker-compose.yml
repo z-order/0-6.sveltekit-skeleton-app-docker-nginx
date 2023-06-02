@@ -1,0 +1,9 @@
+name: my-sveltekit-skeleton-project
+services:
+    nginx:
+        image: sveltekit-skeleton-app-nginx
+        ports:
+            - 80:80
+        environment:
+        - NGINX_HOST=localhost
+        - NGINX_PORT=80
